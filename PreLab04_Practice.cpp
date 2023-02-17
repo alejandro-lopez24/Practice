@@ -11,21 +11,21 @@ class Example {
     public :
         // Default constructor
         Example() {
-            cout << " Default Constructor called " << endl;
+            cout << "Default Constructor called " << endl;
             this -> id = -1;
             this -> name = "N/A";
         }
 
         // Parameterized constructor
         Example(int ID, string NAME) {
-            cout << " Parameterized Constructor called " << endl ;
+            cout << "Parameterized Constructor called " << endl ;
             this -> id = ID ;
             this -> name = NAME ;
         }
 
         // Copy constructor
         Example(Example &e) {
-            cout << " Copy Constructor called " << endl ;
+            cout << "Copy Constructor called " << endl ;
             this -> id = e. getID () ;
             this -> name = e. getName () ;
         }
@@ -63,19 +63,19 @@ void Example :: printName() {
 }
 
 
-int main () {
+int main() {
 
     // call to the default constructor
-    Example obj1 () ; // once this is called , we can access everything inside of example class .
+    Example obj1(); // once this is called , we can access everything inside of example class .
     // obj1 is an instance of the class Example
 
 
     // call to the parametrized constructor
-    Example obj2 (125 , "xyz"); // once this is called , we can access everything inside of example class .
+    Example obj2(125, "xyz"); // once this is called , we can access everything inside of example class .
     // obj2 is an instance of the class Example
 
     // call to the copy constructor
-    Example obj3 ( obj2 ); // once this is called , we can access everything inside of example class .
+    Example obj3(obj2); // once this is called , we can access everything inside of example class .
     // obj3 is an instance of the class Example
 
     // obj3 was created with same id and name as obj2
